@@ -1,78 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio page</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="portfolioheader">
-        <ul class="navlist">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="Aboutpage.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contactme.html">Contact Me</a></li>
-        </ul>
-    </header>
-    <section class="Portfolio" id="portfolio">
-        <div class="main-text">
-            <h2><span>Latest  </span>project</h2>
-        </div>
-        <div class="portfolio-content">
-            <div class="row">
-                <img src="../image/project1.jpg" alt="">
-                <div class="layer">
-                    <h5>Visual design</h5>
-                    <p>Check out 5 design updates for the top web designand development companies.</p>
-                    <a href="#"> <i class="bx bx-link-external"></i></a>
+        
+    <body class="bg-dark text-white">
+        <header class="navbar navbar-expand-lg bg-secondary my-20">
+            <div class="a container bg-secondary">
+                <a class="navbar-brand text-white" href="#">Hammoon</a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link text-white " href="homepage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="Aboutpage.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="services.html">Service</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contactme.html">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="row">
-                <img src="../image/project2.jpg" alt="">
-                <div class="layer">
-                    <h5>Visual design</h5>
-                    <p>Check out 5 design updates for the top web designand development companies.</p>
-                    <a href="#"> <i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="../image/project3.jpg" alt="">
-                <div class="layer">
-                    <h5>Visual design</h5>
-                    <p>Check out 5 design updates for the top web designand development companies.</p>
-                    <a href="#"> <i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="../image/project4.jpg" alt="">
-                <div class="layer">
-                    <h5>Visual design</h5>
-                    <p>Check out 5 design updates for the top web designand development companies.</p>
-                    <a href="#"> <i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="../image/project5.jpg" alt="">
-                <div class="layer">
-                    <h5>Visual design</h5>
-                    <p>Check out 5 design updates for the top web designand development companies.</p>
-                    <a href="#"> <i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="../image/project6.jpg" alt="">
-                <div class="layer">
-                    <h5>Visual design</h5>
-                    <p>Check out 5 design updates for the top web designand development companies.</p>
-                    <a href="#"> <i class="bx bx-link-external"></i></a>
-                </div>
+        </header>
+
+    <section class="portfolio" id="portfolio">
+    <div class="main-text mt-10">
+        <h2 class="text-4xl mt-20 px-10 py-20"><span>Latest  </span>project</h2>
+    </div>
+    <div class="container">
+    <div class="portfolio-content row row-cols-1 row-cols-sm-3 gap-10 mt-20 m-10">
+        <div class="project relative overflow-hidden rounded-md cursor-pointer col col-sm-4 col-md-4">
+            <img src="image/project1.jpg" alt="" class="w-100 rounded-md block transition duration-300 transform hover:scale-110">
+            <div class="layer .bg-gradient absolute bg-gradient-to-b from-.bg-dark.bg-gradient to-.bg-primary.bg-gradient rounded-md left-0 bottom-0 overflow-hidden d-flex flex-wrap flex-column align-items-center justify-content-center px-10 opacity-1 transition duration-500">
+                <h5 class="text-lg text-white font-semibold mt-8 mb-4">Visual design</h5>
+                <p class="text-white-50 text-sm">Visual design is essential in creating a positive user experience and effectively communicating information.</p>
+                <a href="#" class="inline-block m-2">
+                    <i class="fa-solid fa-up-right-from-square text-primary text-1xl text-center bg-white px-3 py-5 w-10 h-10 d-flex align-items-center justify-content-center rounded-circle"></i>
+                </a>
             </div>
         </div>
+
+        <div class="project relative overflow-hidden rounded-md cursor-pointer col col-sm-4 col-md-4">
+            <img src="image/project2.jpg" alt="" class="w-100 rounded-md block transition duration-300 transform hover:scale-110">
+            <div class="layer bg-gradient-to-b from-gray-500 via-transparent to-blue-600 rounded-md left-0 bottom-0 overflow-hidden d-flex flex-wrap flex-column align-items-center justify-content-center px-10 opacity-1 transition duration-500">
+                <h5 class="text-lg text-white font-semibold mt-8 mb-4">Web Development Projects</h5>
+                <p class="text-white-50 text-sm">Develop an e-commerce website with features like product listings, shopping carts, and secure payment processing.</p>
+                <a href="#" class="inline-block m-2">
+                    <i class="fa-solid fa-up-right-from-square text-blue-500 text-1xl text-center bg-white px-3 py-5 w-16 h-16 d-flex align-items-center justify-content-center rounded-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project relative overflow-hidden rounded-md cursor-pointer col col-sm-4 col-md-4">
+            <img src="image/project3.jpg" alt="" class="w-100 rounded-md block transition duration-300 transform hover:scale-110">
+            <div class="layer bg-gradient-to-b from-gray-500 via-transparent to-blue-600 rounded-md left-0 bottom-0 overflow-hidden d-flex flex-wrap flex-column align-items-center justify-content-center px-10 opacity-1 transition duration-500">
+                <h5 class="text-lg text-white font-semibold mt-8 mb-4">Mobile App Development Projects</h5>
+                <p class="text-white-50 text-sm">Develop a mobile app for a specific purpose, such as a task manager, budgeting tool, or fitness tracker.</p>
+                <a href="#" class="inline-block m-2">
+                    <i class="fa-solid fa-up-right-from-square text-blue-500 text-1xl text-center bg-white px-3 py-5 w-16 h-16 d-flex align-items-center justify-content-center rounded-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project relative overflow-hidden rounded-md cursor-pointer col col-sm-4 col-md-4">
+            <img src="image/project4.jpg" alt="" class="w-100 rounded-md block transition duration-300 transform hover:scale-110">
+            <div class="layer bg-gradient-to-b from-gray-500 via-transparent to-blue-600 rounded-md left-0 bottom-0 overflow-hidden d-flex flex-wrap flex-column align-items-center justify-content-center px-10 opacity-1 transition duration-500">
+                <h5 class="text-sm text-white font-semibold mt-8 mb-4">Game Development Projects</h5>
+                <p class="text-white-50 text-sm">Develop a puzzle game with interactive gameplay mechanics and challenging levels.</p>
+                <a href="#" class="inline-block m-2">
+                    <i class="fa-solid fa-up-right-from-square text-blue-500 text-1xl text-center bg-white px-3 py-5 w-16 h-16 d-flex align-items-center justify-content-center rounded-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project relative overflow-hidden rounded-md cursor-pointer col col-sm-4 col-md-4">
+            <img src="image/project5.jpg" alt="" class="w-100 rounded-md block transition duration-300 transform hover:scale-110">
+            <div class="layer bg-gradient-to-b from-secondary via-transparent to-primary rounded-md left-0 bottom-0 overflow-hidden d-flex flex-wrap flex-column align-items-center justify-content-center px-10 opacity-1 transition duration-500">
+                <h5 class="text-sm text-white font-semibold mt-8 mb-4">Data Science and Machine Learning Projects</h5>
+                <p class="text-white-50 text-sm">Visual design is essential in creating a positive user experience and effectively communicating information.</p>
+                <a href="#" class="inline-block m-2">
+                    <i class="fa-solid fa-up-right-from-square text-primary text-1xl text-center bg-white px-3 py-5 w-10 h-10 d-flex align-items-center justify-content-center rounded-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="project relative overflow-hidden rounded-md cursor-pointer col col-sm-4 col-md-4">
+            <img src="image/project6.jpg" alt="" class="w-100 rounded-md block transition duration-300 transform hover:scale-110">
+            <div class="layer bg-gradient-to-b from-gray-500 via-transparent to-blue-600 rounded-md left-0 bottom-0 overflow-hidden d-flex flex-wrap flex-column align-items-center justify-content-center px-10 opacity-1 transition duration-500">
+                <h5 class="text-sm text-white font-semibold mt-8 mb-4">Open Source Contributions</h5>
+                <p class="text-white-50 text-sm">Contribute to open source projects by fixing bugs, implementing new features, or improving documentation.</p>
+                <a href="#" class="inline-block m-2">
+                    <i class="fa-solid fa-up-right-from-square text-blue-500 text-1xl text-center bg-white px-3 py-5 w-16 h-16 d-flex align-items-center justify-content-center rounded-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
     </section>
-    <footer>
-        <p> copyright messages 2023</p>
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <button id="back-to-top-btn" onclick="scrollToTop()" class="btn btn-primary btn-lg position-relative mx-8 my-2 end-0 bg-primary rounded-md text-white py-2 px-4 transition-all duration-300 hover:scale-90">Back to Top</button>
+    <footer class="row row-cols-2 align-items-center bg-gray-900 py-2">
+        <div class="footer-icons d-flex ml-10">
+            <a href="https://t.me/Moon648" target="_blank" class="me-2"><i class="fab fa-telegram text-white text-2xl transition-all duration-300 hover:text-blue-500"></i></a>
+            <a href="https://www.instagram.com/ham64_81?igshid=1x8tvgz4r5a6" target="_blank" class="me-2"><i class="fab fa-instagram text-white text-2xl transition-all duration-300 hover:text-blue-500"></i></a>
+            <a href="https://github.com/hammoon" target="_blank" class="me-2"><i class="fab fa-github text-white text-2xl transition-all duration-300 hover:text-blue-500"></i></a>
+            <a href="https://www.linkedin.com/in/hammoon/" target="_blank"><i class="fab fa-linkedin-in text-white text-2xl transition-all duration-300 hover:text-blue-500"></i></a>
+        </div>
+        <p class="text-gray-400 text-xs text-center mx-auto">© 2023 Hanim Abdurezak. All rights reserved.</p>
     </footer>
-</body>
+
+    </body>
+
 </html>

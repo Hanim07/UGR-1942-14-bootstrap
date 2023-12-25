@@ -3,57 +3,85 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Page</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog page</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
-
-    <header class="blogheader">
-        <ul class="navlist">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="Aboutpage.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contactme.html">Contact Me</a></li>
-        </ul>
+<body class="bg-dark text-white">
+    <header class="navbar navbar-expand-lg bg-secondary my-20">
+        <div class="a container bg-secondary">
+            <a class="navbar-brand text-white" href="#">Hammoon</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-white " href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="Aboutpage.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="services.html">Service</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contactme.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <div class="bcontent">
-        <h1 style="font-family: 'Playfair Display', serif;">Blog</h1>
+    <main>
+        <section class="blog ml-10">
+            <div class="main-text m-10">
+                <h2 class="text-4xl mt-20 m-10">My <span>Blog</span></h2>
+            </div>
+            <div class="container pt-5">
+            <div class="blog-content row row-cols-1 row-cols-md-3 row-col-gap-4 justify-content-center m-10 ">
+                <div class="blog-container card bg-secondary rounded-lg shadow-sm bg-gray-700 rounded-lg shadow-md transition-transform hover:-translate-y-2 col col-sm-4 col-md-4 mx-10 my-10 ">
+                    <img src="image/blog2.jpg" alt="Image 2" class=" card-img-top w-100 rounded-t-lg justify-content-center px-4 py-3">
+                    <p class="text-white px-4 pb-2 text-sm">Coffee with Coding</p>
+                    <p class="text-white px-4 pb-10 text-sm">Coffee has long been a beloved companion for many, providing a boost of energy and a moment of respite. Pairing it with coding creates a delightful synergy, blending the invigorating properties of caffeine with the creative process of programming.</p>
+                </div>
 
-        <div class="bcontainer">
-            <img src="../image/blog1.jpg" alt="Image 1">
-            <p>Embracing the Joy of Lifelong Learning</p>
-            <p> Learning is a lifelong journey, an ever-evolving process that fuels personal growth, expands our horizons, and ignites our curiosity. From the moment we enter the world, we embark on a continuous quest for knowledge and understanding</p>
+                <div class="blog-container card bg-secondary rounded-lg shadow-md transition-transform hover:-translate-y-2 col col-sm-4 col-md-4 px-10 py-10">
+                    <img src="image/blog1.jpg" alt="Image 1" class="card-img-top w-100 rounded-t-lg px-4 py-3 ">
+                    <p class="text-white px-4 pb-2 text-sm">Embracing the Joy of Lifelong Learning</p>
+                    <p class="text-white px-4 pb-10 text-sm">Learning is a lifelong journey, an ever-evolving process that fuels personal growth, expands our horizons, and ignites our curiosity. From the moment we enter the world, we embark on a continuous quest for knowledge and understanding.</p>
+                </div>
+
+                <div class="blog-video-container bg-secondary rounded-lg shadow-md transition-transform hover:-translate-y-2 col col-sm-4 col-md-4 px-10 py-10">
+                    <video src="image/blog3.mp4" controls class="card-img-top w-100 rounded-t-lg px-4 py-3"></video>
+                    <p class="text-white px-4 pb-2 text-sm">Reflections on High School: A Time of Growth, Friendship, and Discovery</p>
+                    <p class="text-white px-4 pb-10 text-sm">High school is a remarkable phase in our lives, encompassing a myriad of experiences that shape our identities and prepare us for the journey ahead. It's a time of transition, growth, and self-discovery.</p>
+                </div>
+            </div>
         </div>
 
-        <div class="bvideo-container">
-            <video src="../image/blog3.mp4"  ></video>
-            <p>Reflections on High School: A Time of Growth, Friendship, and Discovery</p>
-            <p>High school is a remarkable phase in our lives, encompassing a myriad of experiences that shape our identities and prepare us for the journey ahead. It's a time of transition, growth, and self-discovery.</p>
-        </div>
+            <article class="blog-audio-container mt-10">
+                <h4 class="text-white">From Audios</h4>
+                <br>
+                <audio controls class="col">
+                    <source src="image/calmingaudio.mp3" type="audio/mp3">
+                </audio>
+                <p class="text-white px-4 pb-10 text-sm mt-10">Listen to this calming instrumental music while reading a book or working. It's perfect for creating a focused and tranquil environment.</p>
+            </article>
+        </section>
+    </main>
 
-        <div class="bcontainer">
-            <img src="../image/blog2.jpg" alt="Image 2">
-            <p> Coffee has long been a beloved companion for many, providing a boost of energy and a moment of respite. Pairing it with coding creates a delightful synergy, blending the invigorating properties of caffeine with the creative process of programming. </p>
-        </div>
+    <script src="bootstrap.bundle.min.js"></script>
 
-        <div class="baudio-container">
-            <audio controls>
-                <source src="../image/calmingaudio.mp3" type="audio/mp3">
-                Your browser does not support the audio tag.
-            </audio>
-            <p>Listen to this calming instrumental music while reading a book or working. It's perfect for creating a focused and tranquil environment.</p>
+    <button id="back-to-top-btn" onclick="scrollToTop()" class="btn btn-primary btn-lg position-relative mx-8 my-2 end-0 bg-primary rounded-md text-white py-2 px-4 transition-all duration-300 hover:scale-90">Back to Top</button>
+    <footer class="row row-cols-2 align-items-center bg-gray-900 py-2">
+        <div class="footer-icons d-flex ml-10">
+            <a href="https://t.me/Moon648" target="_blank" class="me-2"><i class="fab fa-telegram text-white text-2xl transition-all duration-300 hover:text-blue-500"></i></a>
+            <a href="https://www.instagram.com/ham64_81?igshid=1x8tvgz4r5a6" target="_blank" class="me-2"><i class="fab fa-instagram text-white text-2xl transition-all duration-300 hover:text-blue-500"></i></a>
+            <a href="https://github.com/hammoon" target="_blank" class="me-2"><i class="fab fa-github text-white text-2xl transition-all duration-300 hover:text-blue-500"></i></a>
+            <a href="https://www.linkedin.com/in/hammoon/" target="_blank"><i class="fab fa-linkedin-in text-white text-2xl transition-all duration-300 hover:text-blue-500"></i></a>
         </div>
-    </div>
-
-    <footer >
-        <p> copyright messages 2023</p>
+        <p class="text-gray-400 text-xs text-center mx-auto">© 2023 Hanim Abdurezak. All rights reserved.</p>
     </footer>
-
-</body>
-
-</html>
+    </body>
+    </html>
